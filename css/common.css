@@ -1,0 +1,103 @@
+
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #f7f4eb;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: #c7c7c7;
+	box-shadow: 0 0 10px inset rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background: #fff;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.flex-center {
+	justify-content: center;
+}
+
+.flex-shrink {
+	flex-shrink: 0;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.flex-around {
+	justify-content: space-around;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-align-end {
+	align-items: flex-end;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.header-pc{
+	padding-top: 26px;
+}
+
+
+
+/* @media screen {
+	
+} */
+
+
