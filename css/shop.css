@@ -1,0 +1,78 @@
+body {
+
+}
+
+.shop-banner {
+	background-image: url(../img/shop_banner.jpg);
+}
+
+.shop-list {
+	padding-top: 60px;
+	padding-bottom: 120px;
+	background-color: #fafafa;
+}
+
+.shop-list .shop-item {
+	width: 100%;
+	height: auto;
+	padding: 48px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.shop-list .shop-item+.shop-item{
+	margin-top: 48px;
+}
+
+.shop-list .shop-item .shop-img {
+	width: 100%;
+	max-width: 628px;
+	height: 360px;
+	border-radius: 20px;
+}
+
+.shop-list .shop-item .shop-info {
+	width: 100%;
+	max-width: 628px;
+}
+
+.shop-list .shop-item .shop-name {
+	font-size: 30px;
+	color: #333333;
+	margin-bottom: 40px;
+}
+
+.shop-list .shop-item .shop-tel {
+	font-weight: bold;
+	font-size: 25px;
+	color: #007e94;
+	margin-bottom: 20px;
+	background: url(../img/shop_phone.png)left center no-repeat;
+	padding-left: 35px;
+}
+
+.shop-list .shop-item .shop-address {
+	font-size: 16px;
+	line-height: 36px;
+	color: #666666;
+	padding-bottom: 40px;
+	border-bottom: solid 1px #e5e5e5;
+}
+
+.shop-list .shop-item .navigation {
+	font-size: 16px;
+	line-height: 36px;
+	color: #aaaaaa;
+	margin-top: 100px;
+	background: url(../img/shop_address.png)left center no-repeat;
+	padding-left: 26px;
+	cursor: pointer;
+}
+
+
+
+.footer{
+	margin-top: 0;
+}

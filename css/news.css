@@ -1,0 +1,141 @@
+.news-banner {
+	background-image: url(../img/news_banner.jpg);
+}
+
+.news-list {
+	background-color: #fafafa;
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+
+
+.news-list .news-list-item {
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	border-radius: 16px;
+}
+
+.news-list .news-list-item+.news-list-item {
+	margin-top: 36px;
+}
+
+.news-list .news-list-item .news-img {
+	width: 100%;
+	max-width: 304px;
+	height: 204px;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.news-list .news-list-item .news-img img {
+	width: 100%;
+}
+
+.news-list .news-list-item .news-info {
+	width: 100%;
+	max-width: calc(100% - 350px);
+}
+
+.news-list .news-list-item .news-name {
+	font-size: 20px;
+	line-height: 48px;
+	color: #333333;
+}
+
+.news-list .news-list-item .news-time {
+	font-size: 14px;
+	line-height: 36px;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.news-list .news-list-item .news-dec {
+	font-size: 14px;
+	line-height: 24px;
+	color: #999999;
+}
+
+.news-list .news-list-item .news-icon {
+	width: 25px;
+	height: 11px;
+	margin-top: 50px;
+	background: url(../img/news_icon.png)center center no-repeat;
+}
+
+
+.news-swiper {
+	margin-bottom: 60px;
+	background-color: #fff;
+	width: 100%;
+	height: 478px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.news-swiper .news-swiper-img {
+	width: 100%;
+	max-width: 700px;
+}
+
+.news-swiper .news-swiper-info {
+	width: 100%;
+	max-width: 700px;
+	box-sizing: border-box;
+	padding: 48px 20px 48px 60px;
+}
+
+.news-swiper-info .news-title {
+	font-size: 30px;
+	line-height: 36px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+.news-swiper-info .news-time {
+	font-size: 16px;
+	line-height: 24px;
+	color: #999999;
+	margin-bottom: 60px;
+}
+
+.news-swiper-info .news-dec {
+	font-size: 16px;
+	line-height: 24px;
+	color: #999999;
+}
+
+.swiper-btn{
+	position: absolute;
+	right: 37%;
+	bottom: 48px;
+	z-index: 999;
+}
+
+.news-btn-prev,
+.news-btn-next {
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border-radius: 25px;
+	border: solid 1px #e5e5e5;
+	cursor: pointer;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.news-btn-prev{
+	background-image: url(../img/news_prev.png);
+}
+
+.news-btn-next{
+	margin-left: 24px;
+	background-image: url(../img/news_next.png);
+}
+
+.footer {
+	margin-top: 0;
+}

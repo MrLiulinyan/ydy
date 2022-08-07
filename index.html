@@ -4,87 +4,678 @@
 		<meta charset="utf-8" />
 		<title>伊德雅全屋定制</title>
 		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
-		 <link href="css/common.css" rel="stylesheet" type="text/css" />
-		 <link href="css/home.css" rel="stylesheet" type="text/css" />
-		  <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/common.css" rel="stylesheet" type="text/css" />
+		<link href="css/home.css" rel="stylesheet" type="text/css" />
+		<link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<!-- header PC -->
-		<div class="header header-pc">
+		<div class="header header-pc" id="headerPC">
 			<div class="container flex-row flex-between">
 				<div class="header-logo">
-					<img src="img/logo.png" alt="logo">
+					<img src="img/logo.png" alt="logo" class="logo">
+					<img src="img/logo_active.png" alt="logo" class="logo-active">
 				</div>
-				<div class="menu-list flex-row">
-					<div class="menu-item"><a href="#">全屋定制</a></div>
-					<div class="menu-item"><a href="#">家装攻略</a></div>
-					<div class="menu-item"><a href="#">品牌介绍</a></div>
-					<div class="menu-item"><a href="#">门店展示</a></div>
-					<div class="menu-item"><a href="#">资讯中心</a></div>
-					<div class="menu-item"><a href="#">联系我们</a></div>
+			    <div class="header-content flex-row">
+					<div class="menu-list flex-row flex-align-center">
+						<div class="menu-item">
+							<a href="#">全屋定制</a>
+						</div>
+						<div class="menu-item"><a href="#">家装攻略</a></div>
+						<div class="menu-item">
+							<a href="#">品牌介绍</a>
+							<div class="menu-child-list">
+								<div class="menu-child-item"><a href="#">公司介绍</a></div>
+								<div class="menu-child-item"><a href="#">发展历程</a></div>
+								<div class="menu-child-item"><a href="#">荣誉资质</a></div>
+								<div class="menu-child-item"><a href="#">设计师介绍</a></div>
+								<div class="menu-child-item"><a href="#">公司动态</a></div>
+							</div>
+						</div>
+						<div class="menu-item"><a href="#">门店展示</a></div>
+						<div class="menu-item">
+							<a href="#">资讯中心</a>
+							<div class="menu-child-list">
+								<div class="menu-child-item"><a href="#">公司新闻</a></div>
+								<div class="menu-child-item"><a href="#">行业动态</a></div>
+								<div class="menu-child-item"><a href="#">定制知识</a></div>
+							</div>
+						</div>
+						<div class="menu-item"><a href="#">联系我们</a></div>
+					</div>
+					<div class="search flex-row flex-align-center">
+						<input type="text" id="searchInput" placeholder="请输入关键字" />
+						<div class="search-btn" id="searchBtn"></div>
+					</div>
 				</div>
-				<div class="search"></div>
 			</div>
 		</div>
 		<!-- banner -->
 		<div class="banner">
 			<div class="swiper-container banner-swiper">
-			  <div class="swiper-wrapper">
-			    <div class="swiper-slide swiper-no-swiping">
-			      <img src="./img/" />
-			    </div>
-			    <div class="swiper-slide swiper-no-swiping">
-			      <img src="./img/" />
-			    </div>
-			    <div class="swiper-slide swiper-no-swiping">
-			      <img src="./img/" />
-			    </div>
-			  </div>
-			  <!-- 分页器 -->
-			  <div class="swiper-pagination"></div>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-no-swiping">
+						<img src="./img/banner.jpg" />
+					</div>
+					<div class="swiper-slide swiper-no-swiping">
+						<img src="./img/banner.jpg" />
+					</div>
+					<div class="swiper-slide swiper-no-swiping">
+						<img src="./img/banner.jpg" />
+					</div>
+				</div>
+				<!-- 分页器 -->
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 		<!-- WHAT CAN WE DO ? -->
 		<div class="about">
-			<div class="container"></div>
+			<div class="container">
+				<div class="common-title">
+					<div class="common-title-cn">我们能做什么？</div>
+					<div class="common-title-en">WHAT CAN WE DO ?</div>
+				</div>
+				<div class="about-content">
+					<div class="flex-row flex-wrap flex-between about-content-top">
+						<div class="about-banner">
+							<img src="img/a.png" alt="" />
+						</div>
+						<div class="about-item">
+							<a href="#">
+								<div class="classfiy-name">
+									<div class="classfiy-name-cn">2022新品</div>
+									<div class="classfiy-name-en">2022 NEW PRODUCTS</div>
+								</div>
+								<div class="classfiy-img">
+									<img src="img/b.png" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="flex-row flex-wrap flex-between about-content-bottom">
+						<div class="about-item">
+							<a href="#">
+								<div class="classfiy-name">
+									<div class="classfiy-name-cn">卧室系列</div>
+									<div class="classfiy-name-en">BEDROOM SERIES</div>
+								</div>
+								<div class="classfiy-img">
+									<img src="img/d.png" />
+								</div>
+							</a>
+						</div>
+						<div class="about-item">
+							<a href="#">
+								<div class="classfiy-name">
+									<div class="classfiy-name-cn">沙发系列</div>
+									<div class="classfiy-name-en">SOFA SERIES</div>
+								</div>
+								<div class="classfiy-img">
+									<img src="img/e.png" />
+								</div>
+							</a>
+						</div>
+						<div class="about-item">
+							<a href="#">
+								<div class="classfiy-name">
+									<div class="classfiy-name-cn">家装攻略</div>
+									<div class="classfiy-name-en">DECORATION STRATEGY</div>
+								</div>
+								<div class="classfiy-img">
+									<img src="img/d.png" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- WHOLE HOUSE DESIGN -->
 		<div class="products">
-			<div class="container"></div>
+			<div class="products-banner">
+				<img src="img/f.jpg" alt="">
+			</div>
+			<div class="container">
+				<div class="products-content">
+					<div class="products-classify flex-row flex-align-center flex-center flex-around">
+						<div class="products-classify-item active">
+							<a href="#">
+								<div class="item-icon">
+									<img src="img/bed.png" alt="卧室">
+								</div>
+								<div class="item-name text-center">卧室</div>
+							</a>
+						</div>
+						<div class="products-classify-item">
+							<a href="#">
+								<div class="item-icon">
+									<img src="img/study.png" alt="书房">
+								</div>
+								<div class="item-name text-center">书房</div>
+							</a>
+						</div>
+						<div class="products-classify-item">
+							<a href="#">
+								<div class="item-icon">
+									<img src="img/closet.png" alt="青少年房">
+								</div>
+								<div class="item-name text-center">青少年房</div>
+							</a>
+						</div>
+						<div class="products-classify-item">
+							<a href="#">
+								<div class="item-icon">
+									<img src="img/sofa.png" alt="客餐厅">
+								</div>
+								<div class="item-name text-center">客餐厅</div>
+							</a>
+						</div>
+					</div>
+					<div class="products-display flex-row flex-wrap flex-between">
+						<div class="flex-row products-display-left flex-between">
+							<div class="proudcts-list">
+								<div class="classify-name">卧室</div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+							</div>
+							<div class="proudcts-list">
+								<div class="classify-name">书房</div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+							</div>
+							<div class="proudcts-list">
+								<div class="classify-name">青少年房</div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+							</div>
+							<div class="proudcts-list">
+								<div class="classify-name">客餐厅</div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+
+							</div>
+							<div class="proudcts-list">
+								<div class="classify-name">其他</div>
+								<div class="products-name"><a href="#">产品名</a></div>
+								<div class="products-name"><a href="#">产品名</a></div>
+							</div>
+						</div>
+						<div class="products-display-right">
+							<div class="swiper-container case-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide swiper-no-swiping">
+										<img src="./img/product.jpg" />
+										<div class="case-title">案例展示：沣盛帝景T60-04户型</div>
+									</div>
+									<div class="swiper-slide swiper-no-swiping">
+										<img src="./img/product.jpg" />
+										<div class="case-title">案例展示：沣盛帝景T60-04户型</div>
+									</div>
+									<div class="swiper-slide swiper-no-swiping">
+										<img src="./img/product.jpg" />
+										<div class="case-title">案例展示：沣盛帝景T60-04户型</div>
+									</div>
+								</div>
+								<!-- 切换按钮 -->
+								<div class="swiper-btn flex-row">
+									<div class="case-btn-prev button-prev"></div>
+									<div class="case-btn-next button-next"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- NEW PRODUCTS -->
 		<div class="new-products">
-			<div class="container"></div>
+			<div class="container">
+				<div class="common-title">
+					<div class="common-title-cn">2022 热卖新款</div>
+					<div class="common-title-en">NEW PRODUCTS</div>
+				</div>
+				<div class="new-products-content flex-row">
+					<div class="new-products-left">
+						<a href="#">
+							<img src="img/g.jpg" />
+						</a>
+					</div>
+					<div class="new-products-right flex-row flex-wrap">
+						<div class="new-products-item">
+							<a href="#">
+								<div class="new-products-img">
+									<img src="img/p1.png" />
+								</div>
+								<div class="new-products-name">沙发款式名</div>
+							</a>
+						</div>
+						<div class="new-products-item">
+							<a href="#">
+								<div class="new-products-img">
+									<img src="img/p2.png" />
+								</div>
+								<div class="new-products-name">沙发款式名</div>
+							</a>
+						</div>
+						<div class="new-products-item">
+							<a href="#">
+								<div class="new-products-img">
+									<img src="img/p3.png" />
+								</div>
+								<div class="new-products-name">沙发款式名</div>
+							</a>
+						</div>
+						<div class="new-products-item">
+							<a href="#">
+								<div class="new-products-img">
+									<img src="img/p4.png" />
+								</div>
+								<div class="new-products-name">沙发款式名</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- team -->
-		<div class="team">
-			<div class="container"></div>
+		<div class="team flex-column flex-align-center flex-center">
+			<div class="common-title">
+				<div class="common-title-cn">专业设计师团队为您服务</div>
+				<div class="common-title-en">NEW PRODUCTS</div>
+			</div>
+			<div class="team-btn"><a href="#">了解团队</a></div>
 		</div>
 		<!-- PROCESS DETAILS -->
 		<div class="process-details">
-			<div class="container"></div>
+			<div class="container">
+				<div class="common-title">
+					<div class="common-title-cn">工艺细节</div>
+					<div class="common-title-en">PROCESS DETAILS</div>
+				</div>
+				<div class="process-content">
+					<div class="swiper-container process-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide process-item">
+								<img src="img/craft1.png" />
+								<div class="process-title">定制柜子尺寸不要大意，一错毁所有！</div>
+							</div>
+							<div class="swiper-slide process-item">
+								<img src="img/craft2.png" />
+								<div class="process-title">定制柜子尺寸不要大意，一错毁所有！</div>
+							</div>
+							<div class="swiper-slide process-item">
+								<img src="img/craft3.png" />
+								<div class="process-title">定制柜子尺寸不要大意，一错毁所有！</div>
+							</div>
+							<div class="swiper-slide process-item">
+								<img src="img/craft1.png" />
+								<div class="process-title">定制柜子尺寸不要大意，一错毁所有！</div>
+							</div>
+							<div class="swiper-slide process-item">
+								<img src="img/craft2.png" />
+								<div class="process-title">定制柜子尺寸不要大意，一错毁所有！</div>
+							</div>
+							<div class="swiper-slide process-item">
+								<img src="img/craft3.png" />
+								<div class="process-title">定制柜子尺寸不要大意，一错毁所有！</div>
+							</div>
+						</div>
+					</div>
+					<!-- 分页器 -->
+					<div class="case-pagination swiper-pagination"></div>
+				</div>
+			</div>
 		</div>
 		<!-- form -->
-		<div class="form"></div>
+		<div class="form">
+			<div class="container">
+				<div class="flow-list flex-row flex-wrap flex-align-center flex-around">
+					<div class="flow-item text-center">
+						<div class="flow-icon">
+							<img src="./img/flow1.png" alt="">
+						</div>
+						<div class="flow-title">提供上门量尺</div>
+						<div class="flow-name">网上预约</div>
+					</div>
+					<div class="flow-next-icon"></div>
+					<div class="flow-item text-center">
+						<div class="flow-icon">
+							<img src="./img/flow2.png" alt="">
+						</div>
+						<div class="flow-title">提供设计方案</div>
+						<div class="flow-name">实体体验+报价</div>
+					</div>
+					<div class="flow-next-icon"></div>
+					<div class="flow-item  text-center">
+						<div class="flow-icon">
+							<img src="./img/flow3.png" alt="">
+						</div>
+						<div class="flow-title">签订合同</div>
+						<div class="flow-name">支付定金</div>
+					</div>
+					<div class="flow-next-icon"></div>
+					<div class="flow-item  text-center">
+						<div class="flow-icon">
+							<img src="./img/flow4.png" alt="">
+						</div>
+						<div class="flow-title">安排生产</div>
+						<div class="flow-name">查询生产进度</div>
+					</div>
+					<div class="flow-next-icon"></div>
+					<div class="flow-item  text-center">
+						<div class="flow-icon">
+							<img src="./img/flow5.png" alt="">
+						</div>
+						<div class="flow-title">上门安装</div>
+						<div class="flow-name">售后服务</div>
+					</div>
+				</div>
+				<div class="form-content">
+					<div class="form-tips">目前已有<span>112</span>人获取全屋定制报价</div>
+					<form class="flex-row flex-wrap flex-between">
+						<div class="form-item flex-row">
+							<div class="form-item-label form-contact"></div>
+							<div class="form-item-value">
+								<input type="text" placeholder="您的真实姓名" name="name" style="width: 185px;"
+									class="form-input">
+							</div>
+						</div>
+						<div class="form-item flex-row">
+							<div class="form-item-label form-phone"></div>
+							<div class="form-item-value">
+								<input type="text" placeholder="您的联系手机" name="phone" style="width: 185px;"
+									class="form-input">
+							</div>
+						</div>
+						<div class="form-item flex-row">
+							<div class="form-item-value">
+								<input type="text" placeholder="房屋面积" name="acreage" style="width: 100px;"
+									class="form-input">
+							</div>
+							<div class="form-item-unit">㎡</div>
+						</div>
+						<div class="form-item flex-row">
+							<div class="form-item-value">
+								<select  style="width: 100px;">
+									<option value="1">1室</option>
+									<option value="2">2室</option>
+									<option value="3">3室</option>
+									<option value="4">4室</option>
+								</select>
+							</div>
+							<div class="form-item-select"></div>
+						</div>
+						<div class="form-item flex-row">
+							<div class="form-item-value">
+								<select  style="width: 100px;">
+									<option value="1">1厅</option>
+									<option value="2">2厅</option>
+								</select>
+							</div>
+							<div class="form-item-select"></div>
+						</div>
+						<div class="form-item flex-row">
+							<div class="form-item-value">
+								<select  style="width: 100px;">
+									<option value="1">1卫</option>
+									<option value="2">2卫</option>
+								</select>
+							</div>
+							<div class="form-item-select"></div>
+						</div>
+						<input type="submit" value="免费定制设计" class="submit-btn text-center">
+					</form>
+				</div>
+			</div>
+		</div>
 		<!-- COMPANY NEWS -->
 		<div class="company-news">
-			<div class="container"></div>
+			<div class="container">
+				<div class="common-title">
+					<div class="common-title-cn">公司资讯</div>
+					<div class="common-title-en">COMPANY NEWS</div>
+				</div>
+				<div class="news-content flex-row flex-wrap flex-between">
+					<div class="news-left">
+						<div class="company-news-item flex-row">
+							<div class="news-img">
+								<img src="img/new1.png" alt="">
+							</div>
+							<div class="news-info">
+								<div class="news-title">实用定制家居技巧，空间利用率翻倍~</div>
+								<div class="news-time">2022-05-18</div>
+								<div class="news-dec">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
+							</div>
+						</div>
+						<div class="company-news-item flex-row">
+							<div class="news-img">
+								<img src="img/new2.png" alt="">
+							</div>
+							<div class="news-info">
+								<div class="news-title">实用定制家居技巧，空间利用率翻倍~</div>
+								<div class="news-time">2022-05-18</div>
+								<div class="news-dec">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
+							</div>
+						</div>
+						<div class="company-news-item flex-row">
+							<div class="news-img">
+								<img src="img/new3.png" alt="">
+							</div>
+							<div class="news-info">
+								<div class="news-title">实用定制家居技巧，空间利用率翻倍~</div>
+								<div class="news-time">2022-05-18</div>
+								<div class="news-dec">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
+							</div>
+						</div>
+					</div>
+					<div class="news-right">
+						<img src="img/news4.png" alt="">
+						<div class="news-wrap">
+							<div class="news-title">全屋定制有哪些优势？加盟全屋定制全景广阔</div>
+							<div class="news-time">2022-05-18</div>
+							<div class="news-btn"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- footer -->
 		<div class="footer">
-			<div class="container"></div>
+			<div class="footer-content">
+				<div class="container flex-row flex-between">
+					<div class="footer-nav">
+						<div class="footer-nav-title">全屋定制</div>
+						<div class="footer-nav-list">
+							<div class="nav-list-item"><a href="#">卧室</a></div>
+							<div class="nav-list-item"><a href="#">书房</a></div>
+							<div class="nav-list-item"><a href="#">青少年房</a></div>
+							<div class="nav-list-item"><a href="#">客餐厅</a></div>
+							<div class="nav-list-item"><a href="#">阳台</a></div>
+							<div class="nav-list-item"><a href="#">家居家具</a></div>
+							<div class="nav-list-item"><a href="#">更多 +</a></div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav-title">家装攻略</div>
+						<div class="footer-nav-list">
+							<div class="nav-list-item"><a href="#">案例展示</a></div>
+							<div class="nav-list-item"><a href="#">装修攻略</a></div>
+							<div class="nav-list-item"><a href="#">效果图</a></div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav-title">品牌介绍</div>
+						<div class="footer-nav-list">
+							<div class="nav-list-item"><a href="#">公司介绍</a></div>
+							<div class="nav-list-item"><a href="#">发展历程</a></div>
+							<div class="nav-list-item"><a href="#">荣誉资质</a></div>
+							<div class="nav-list-item"><a href="#">设计师介绍</a></div>
+							<div class="nav-list-item"><a href="#">公司动态</a></div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav-title">门店展示</div>
+						<div class="footer-nav-list">
+							<div class="nav-list-item"><a href="#">地区门店</a></div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav-title">资讯中心</div>
+						<div class="footer-nav-list">
+							<div class="nav-list-item"><a href="#">公司新闻</a></div>
+							<div class="nav-list-item"><a href="#">行业动态</a></div>
+							<div class="nav-list-item"><a href="#">定制知识</a></div>
+						</div>
+					</div>
+					<div class="footer-nav">
+						<div class="footer-nav-title">联系我们</div>
+						<div class="footer-nav-list">
+							<div class="nav-list-item"><a href="#">联系方式</a></div>
+							<div class="nav-list-item"><a href="#">在线地图</a></div>
+							<div class="nav-list-item"><a href="#">一键拨号</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright ">
+				<div class="container flex-row flex-between">
+					<div>Copyright © 伊德雅全屋定制 | 粤ICP备0000000号</div>
+					<div>网站建设：中网科技</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- 侧边 -->
+		<div class="flex-column broadside">
+			<div class="list">
+				<div class="broadside-item">
+					<div class="broadside-item-icon">
+						<img src="img/phone.png" alt="电话">
+					</div>
+					<div class="broadside-item-name">电话</div>
+				</div>
+				<div  class="broadside-item">
+					<div class="broadside-item-icon">
+						<img src="img/wechat.png" alt="微信">
+					</div>
+					<div class="broadside-item-name">微信</div>
+				</div>
+				<div  class="broadside-item">
+					<div class="broadside-item-icon">
+						<div class="broadside-item-icon">
+							<img src="img/email.png" alt="邮箱">
+						</div>
+					</div>
+					<div class="broadside-item-name">邮箱</div>
+				</div>
+			</div>
+			<div class="scroll-top-btn broadside-item" id="scrollBtn">
+				<div class="broadside-item-icon">
+					<img src="img/top.png" alt="置顶">
+				</div>
+				<div class="broadside-item-name">置顶</div>
+			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/swiper-4.3.5.min.js"></script>
 	<script type="text/javascript">
 		// banner
 		var banner = new Swiper(".banner-swiper", {
-		  loop: true,
-		  autoplay: false,
-		  pagination: {
-		    el: ".swiper-pagination",
-		    clickable: true,
-		  },
+			loop: true,
+			autoplay: false,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
 		});
+		// case
+		var caseDisplay = new Swiper(".case-swiper", {
+			loop: true,
+			autoplay: false,
+			navigation: {
+				nextEl: '.case-btn-next',
+				prevEl: '.case-btn-prev',
+			}
+		})
+		// process
+		var process = new Swiper(".process-swiper", {
+			loop: true,
+			autoplay: false,
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+			spaceBetween: 30,
+			pagination: {
+				el: ".case-pagination",
+				clickable: true,
+			},
+		});
+		// 获取滚动位置
+		function getPageScroll() {
+			let x, y;
+			if (window.pageXOffset) {
+				x = window.pageXOffset;
+				y = window.pageYOffset;
+			} else if (document.compatMode === "BackCompat") {
+				x = document.body.scrollLeft;
+				y = document.body.scrollTop;
+			} else {
+				x = document.documentElement.scrollLeft;
+				y = document.documentElement.scrollTop;
+			}
+			return {
+				x: x,
+				y: y
+			}
+		};
+		var headerWrap = $('#headerPC');
+		var scrollTopBtn = $('#scrollBtn')[0];
+		// 监听滚动
+		window.onscroll = function() {
+			let offsetY = getPageScroll().y;
+			if(offsetY>0){
+				headerWrap.addClass('header-pc-active')
+			}else{
+				headerWrap.removeClass('header-pc-active')
+			}
+			if (offsetY >= 200) {
+				scrollTopBtn.style.display = "block";
+			} else {
+				scrollTopBtn.style.display = "none";
+			}
+		};
+		// 点击返回
+		let timerId = null;
+		scrollTopBtn.onclick = function() {
+			clearInterval(timerId);
+			timerId = setInterval(function() {
+				let begin = getPageScroll().y; //当前位置
+				let target = 0; //目标位置
+				let step = (target - begin) * 0.3;
+				begin += step;
+				if (Math.abs(Math.floor(step)) <= 1) {
+					clearInterval(timerId);
+					window.scrollTo(0, 0);
+					return;
+				}
+				window.scrollTo(0, begin);
+			}, 50)
+		};
+		// 搜索
+		var searchBtn = $('#searchBtn')[0];
+		var searchInput = $('#searchInput');
+		searchBtn.onclick = function(){
+			searchInput.focus();
+		}
 	</script>
 </html>

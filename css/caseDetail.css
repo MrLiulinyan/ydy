@@ -1,0 +1,146 @@
+body {
+	background-color: #fafafa;
+}
+
+.inside-main {
+	padding-top: 30px;
+}
+
+.detail-left,
+.detail-right {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.detail-left {
+	max-width: 1000px;
+	padding: 60px 48px;
+}
+
+.detail-right {
+	max-width: 352px;
+	padding: 60px 36px;
+}
+
+
+.detail-left .detail-title {
+	font-size: 30px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+.detail-left .detail-time {
+	font-size: 14px;
+	color: #aaaaaa;
+	margin-bottom: 48px;
+}
+
+.detail-left .detail-content {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+}
+
+
+.detail-right-title {
+	font-size: 24px;
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.detail-right-title2 {
+	font-size: 14px;
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.form-row {
+	width: 100%;
+	border-bottom: solid 1px #cdcdcd;
+	padding: 10px 0;
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+
+.form-row input {
+	border: none;
+}
+
+.form-row textarea {
+	width: 100%;
+	min-height: 104px;
+	box-sizing: border-box;
+	padding: 12px;
+}
+
+.form-row input:focus-visible,
+.form-row textarea:focus-visible {
+	outline: none;
+}
+
+.form-row:nth-of-type(3) {
+	border: none;
+}
+
+.form-btn input {
+	width: 100%;
+	height: 40px;
+	background-color: #007e94;
+	color: #fff;
+	border: none;
+	outline: none;
+}
+
+
+.sub-title {
+	font-size: 16px;
+	color: #666666;
+	margin-bottom: 26px;
+	line-height: 20px;
+}
+
+.sub-title:before{
+	content: '';
+	display: inline-block;
+	width: 3px;
+	height: 20px;
+	background-color: #007e94;
+	margin-right: 16px;
+	margin-bottom: -5px;
+}
+
+.recommend-head {
+	margin-bottom: 10px;
+}
+
+.recommend-img {
+	height: 180px;
+	overflow: hidden;
+}
+
+.recommend-name {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #007e94;
+	color: #fff;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.recommend-item {
+	font-size: 14px;
+	color: #666666;
+	border-bottom: solid 1px #cdcdcd;
+	padding: 14px 0;
+}
+
+.recommend-item:hover a{
+	color: #007e94;
+}
+
+.message-form {
+	margin-bottom: 110px;
+}

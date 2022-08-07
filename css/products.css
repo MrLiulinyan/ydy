@@ -1,0 +1,28 @@
+.products-banner {
+	background-image: url(../img/products_banner.jpg);
+}
+
+.products-list{
+	margin: -15px;
+}
+
+.product-item {
+	width: 100%;
+	max-width: 446px;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 15px;
+}
+
+.product-item .product-img {
+	width: 100%;
+	height: 328px;
+}
+
+.product-item .product-name {
+	line-height: 65px;
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+	background-color: #efefef;
+}
