@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, userscalable:no'>
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/common.css" rel="stylesheet" type="text/css" />
+		<link href="css/leftMenu.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="header header-pc header-pc-active" id="headerPC">
+			<div class="container flex-row flex-between flex-align-center">
+				<div class="header-logo">
+					<img src="img/logo.png" alt="logo" class="logo">
+					<img src="img/logo_active.png" alt="logo" class="logo-active">
+				</div>
+			    <div class="header-content flex-row">
+					<div class="menu-list flex-row flex-align-center">
+						<div class="menu-item">
+							<a href="#" class="active">全屋定制</a>
+						</div>
+						<div class="menu-item"><a href="#">家装攻略</a></div>
+						<div class="menu-item">
+							<a href="#">品牌介绍</a>
+							<div class="menu-child-list">
+								<div class="menu-child-item"><a href="#">公司介绍</a></div>
+								<div class="menu-child-item"><a href="#">发展历程</a></div>
+								<div class="menu-child-item"><a href="#">荣誉资质</a></div>
+								<div class="menu-child-item"><a href="#">设计师介绍</a></div>
+								<div class="menu-child-item"><a href="#">公司动态</a></div>
+							</div>
+						</div>
+						<div class="menu-item"><a href="#">门店展示</a></div>
+						<div class="menu-item">
+							<a href="#">资讯中心</a>
+							<div class="menu-child-list">
+								<div class="menu-child-item"><a href="#">公司新闻</a></div>
+								<div class="menu-child-item"><a href="#">行业动态</a></div>
+								<div class="menu-child-item"><a href="#">定制知识</a></div>
+							</div>
+						</div>
+						<div class="menu-item"><a href="#">联系我们</a></div>
+					</div>
+					<div class="search flex-row flex-align-center">
+						<input type="text" id="searchInput" placeholder="请输入关键字" />
+						<div class="search-btn" id="searchBtn"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 移动端 -->
+		<div class="header-mobile flex-row flex-align-center flex-between">
+			<div class="header-logo">
+				<img src="img/logo.png" alt="logo" class="logo">
+				<!-- <img src="img/logo_active.png" alt="logo" class="logo-active"> -->
+			</div>
+			<div class="menu-btn"></div>
+		</div>
+		<!-- 菜单 -->
+		<div id="menu" class="leftMenu">
+			<div class="f1">
+				<ul>
+					<li>
+						<a href="#">JQ全屋定制</a>
+					</li>
+					<li>
+						<a href="#">家装攻略</a>
+					</li>
+					<li class="hasChild">
+						<a href="#">品牌介绍</a>
+						<div class="f2">
+							<ul>
+								<li>
+									<a href="#">公司介绍</a>
+								</li>
+								<li>
+									<a href="#">发展历程</a>
+								</li>
+								<li>
+									<a href="#">荣誉资质</a>
+								</li>
+								<li>
+									<a href="#">设计师介绍</a>
+								</li>
+								<li>
+									<a href="#">公司动态</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">门店展示</a></li>
+					<li class="hasChild">
+						<a href="#">资讯中心</a>
+						<div class="f2">
+							<ul>
+								<li>
+									<a href="#">公司新闻</a>
+								</li>
+								<li>
+									<a href="#">行业动态</a>
+								</li>
+								<li>
+									<a href="#">定制知识</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<style>
+		html,
+		body {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+		}
+
+		.header-mobile {
+			background-color: #333;
+			padding: 10px 20px;
+		}
+
+		.header-mobile.header-logo {
+			width: auto;
+			height: 32px;
+		}
+
+		.header-mobile .menu-btn {
+			width: 40px;
+			height: 40px;
+			background: url(img/menu_btn.png)center center no-repeat;
+			cursor: pointer;
+			outline: none;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/leftMenu.js"></script>
+	<script type="text/javascript">
+		$(function($) {
+			$('#menu').leftMenu({"triggerBtn": ".menu-btn"}).init();
+			$('#headerPC .menu-list .menu-item a').hover(
+			function(e){
+				$(e.target).parent('.menu-item').addClass('on')
+			},function(e){
+				$(e.target).parent('.menu-item').removeClass('on')
+			})
+			$('#headerPC .menu-list .menu-item .menu-child-list a').hover(
+			function(e){
+				$(e.target).parents('.menu-item').addClass('on')
+			},function(e){
+				$(e.target).parents('.menu-item').removeClass('on')
+			}
+			)
+		})
+	</script>
+</html>

@@ -99,14 +99,16 @@ img {
 }
 
 .header-pc {
-	padding-top: 26px;
-	padding-bottom: 24px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: auto;
+	height: 112px;
 	z-index: 999;
+}
+
+.header-pc .container{
+	height: 100%;
 }
 
 .header-pc .logo {
@@ -132,6 +134,10 @@ img {
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
+.header-pc .header-content{
+	height: 100%;
+}
+
 .header-pc .menu-list:after {
 	content: '';
 	display: block;
@@ -146,36 +152,55 @@ img {
 }
 
 .header-pc .menu-list .menu-item {
-	padding: 20px;
 	position: relative;
+	height: 100%;
 }
-
+.header-pc .menu-list .menu-item>a{
+	line-height: 120px !important;
+}
 .header-pc .menu-list .menu-item a {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 1px;
 	color: #ffffff;
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
 }
-
+.header-pc .menu-list .menu-item>a{
+	padding: 0 30px;
+}
+.header-pc .menu-list .menu-item.on>a,
+.header-pc .menu-list .menu-item a.active,
 .header-pc .menu-list .menu-item a:hover {
 	color: #3c9aab !important;
 }
+
+.header-pc .menu-list .menu-item.on .menu-child-list{
+	display: block;
+}
+
 
 .header-pc .menu-list .menu-child-list {
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 90px;
+	top: 100%;
 	width: 100%;
 	height: auto;
-	padding: 10px 20px;
-	line-height: 36px;
 	background-color: #fff;
 	border: solid 1px #f0f0f0;
 }
 
 .header-pc .menu-list .menu-child-list a {
-	color: #333;
+	line-height: 24px;
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: solid 1px #f5f5f5;
+}
+
+.header-pc .menu-list .menu-child-list .menu-child-item:last-of-type a{
+	border-bottom: none;
 }
 
 .header-pc .search {
@@ -467,6 +492,6 @@ img {
 	color: #777777;
 }
 
-/* @media screen {
+/* @media screen and (max-width: 300px)  {
 	
 } */
