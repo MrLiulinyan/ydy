@@ -3,24 +3,31 @@
 	padding-bottom: 180px;
 }
 
+.about-banner {
+	width: 100%;
+	margin-bottom: 10px;
+	max-width: calc(100% / 3 * 2);
+}
+
 .about .about-item {
 	max-width: 460px;
 	width: calc(100% / 3);
 	height: auto;
 	background-color: #efefef;
 	border-radius: 16px;
+	margin-bottom: 10px;
 }
 
-.about .about-item a{
+.about .about-item a {
 	padding-top: 80px;
 	display: block;
 }
 
-.about .about-item .classfiy-img{
+.about .about-item .classfiy-img {
 	transition: all .5s;
 }
 
-.about .about-item:hover .classfiy-img{
+.about .about-item:hover .classfiy-img {
 	transform: scale(1.05);
 }
 
@@ -37,10 +44,6 @@
 	font-size: 14px;
 	line-height: 24px;
 	color: #777777;
-}
-
-.about-content-bottom {
-	margin-top: 10px;
 }
 
 .products-banner img {
@@ -79,16 +82,16 @@
 }
 
 .products-display .products-display-left {
-	width: 50%;
+	width: 100%;
+	max-width: 50%;
 	padding-top: 30px;
 }
 
 .products-display .products-display-right {
-	width: 522px;
+	width: 100%;
+	max-width: 522px;
 	height: 312px;
 }
-
-
 
 .products-display .proudcts-list .classify-name {
 	font-size: 20px;
@@ -178,7 +181,7 @@
 	padding-top: 30px;
 }
 
-.new-products .new-products-content .new-products-item:hover .new-products-name{
+.new-products .new-products-content .new-products-item:hover .new-products-name {
 	color: #3c9aab;
 }
 
@@ -238,13 +241,13 @@
 	border-radius: 20px;
 }
 
-.process-content .process-item img{
+.process-content .process-item img {
 	width: 100%;
 	transition: all .5s;
 }
 
-.process-content .process-item:hover img{
-	 transform: scale(1.05);
+.process-content .process-item:hover img {
+	transform: scale(1.05);
 }
 
 .process-content .process-title {
@@ -326,7 +329,7 @@
 }
 
 
-.form .flow-list .flow-icon{
+.form .flow-list .flow-icon {
 	width: 55px;
 	height: 50px;
 	margin: 0 auto;
@@ -336,7 +339,13 @@
 	background: url(../img/flow6.png) center center no-repeat;
 	width: 18px;
 	height: 16px;
+	margin: 0 10px;
 }
+
+.form .flow-item {
+	margin-bottom: 20px;
+}
+
 
 .form .flow-item .flow-title {
 	font-size: 20px;
@@ -351,7 +360,7 @@
 }
 
 .form .form-content {
-	margin-top: 58px;
+	margin-top: 38px;
 }
 
 .form .form-content .form-item {
@@ -365,12 +374,39 @@
 
 .form .form-content .form-item input,
 .form .form-content .form-item select {
+	width: 100%;
 	height: 100%;
 	border: none;
 	padding: 0 15px;
 	box-sizing: border-box;
 	appearance: none;
 }
+
+.form .form-content .form-item-name,
+.form .form-content .form-item-phone,
+.form .form-content .form-item-acreage{
+	width: 240px;
+}
+
+.form .form-content .form-select-room,
+.form .form-content .form-select-hall,
+.form .form-content .form-select-toilet{
+	width: 145px;
+}
+
+.form .form-content .form-item-name .form-item-value,
+.form .form-content .form-item-phone .form-item-value,
+.form .form-content .form-item-acreage .form-item-value{
+	width: calc(100% - 53px);
+}
+
+
+.form .form-content .form-select-room .form-item-value,
+.form .form-content .form-select-hall .form-item-value,
+.form .form-content .form-select-toilet .form-item-value{
+	width: calc(100% - 43px);
+}
+
 
 .form .form-content .form-item .form-item-label {
 	background-color: #007e94;
@@ -410,10 +446,11 @@
 }
 
 .form .form-item-unit {
+	width: 53px;
 	line-height: 48px;
 	font-size: 16px;
 	background-color: #fff;
-	padding: 0 14px;
+	text-align: center;
 }
 
 .form .form-tips {
@@ -442,7 +479,7 @@
 	margin-bottom: 44px;
 }
 
-.company-news .company-news-item:hover  .news-title{
+.company-news .company-news-item:hover .news-title {
 	color: #3c9aab;
 }
 
@@ -452,10 +489,17 @@
 
 .company-news .company-news-item .news-img {
 	margin-right: 25px;
-	width: 194px;
+	max-width: 194px;
+	width: 100%;
 	height: 130px;
 	border-radius: 16px;
 	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.company-news .company-news-item .news-info {
+	width: 100%;
+	max-width: calc(100% - 219px);
 }
 
 .company-news .company-news-item .news-title {
@@ -479,16 +523,16 @@
 
 .company-news .news-left {
 	width: 100%;
-	max-width: 670px;
+	max-width: calc(50% - 30px);
 }
 
 .company-news .news-right {
-	max-width: 670px;
+	max-width: calc(50% - 30px);
 	width: 100%;
 	height: 478px;
-	background-color: #9a7d4f;
 	border-radius: 20px;
 	position: relative;
+	overflow: hidden;
 }
 
 .company-news .news-right .news-wrap {
@@ -528,4 +572,137 @@
 	background-image: url(../img/j.png);
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+
+/* ipad or 移动端 */
+@media screen and (max-width: 1400px) {
+	.about-content-top {
+		margin: 0 -5px;
+	}
+
+	.about .about-banner {
+		max-width: 100%;
+	}
+
+	.about .about-item {
+		width: calc(100% / 2);
+		max-width: calc(50% - 10px);
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.products-display .products-display-left {
+		max-width: 100%;
+	}
+
+	.products-display .products-display-right {
+		max-width: 100%;
+		margin-top: 50px;
+		height: auto;
+	}
+
+	.products-display {
+		padding: 0;
+		margin-top: 50px;
+	}
+
+
+}
+
+/* 移动端 */
+@media screen and (max-width: 768px) {
+	.about {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.about .about-item a {
+		padding-top: 30px;
+	}
+
+	.about .classfiy-name-cn {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.about .classfiy-name-en {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.company-news .news-left {
+		max-width: 100%;
+	}
+
+	.company-news .news-right {
+		margin-top: 50px;
+		max-width: 100%;
+		height: 281px;
+	}
+	.company-news .news-right .news-wrap{
+		left: 5px;
+		bottom: 5px;
+	}
+
+	.products-classify {
+		padding: 0 20px;
+	}
+	
+	.products,
+	.new-products,
+	.team,
+	.process-details{
+		margin-bottom: 60px;
+	}
+
+	.form {
+		height: auto;
+		background-size: cover;
+		margin-bottom: 60px;
+	}
+
+	.form .form-content .form-item {
+		margin-bottom: 10px;
+	}
+	.form .form-content .form-item-name,
+	.form .form-content .form-item-phone,
+	.form .form-content .form-item-acreage{
+		width: 100%;
+	}
+	
+	.form .form-content .form-select-room,
+	.form .form-content .form-select-hall,
+	.form .form-content .form-select-toilet{
+		width: calc(100% / 3 - 10px);
+	}
+	
+	.form .submit-btn{
+		margin-top: 20px;
+	}
+
+	.new-products-left,
+	.new-products-right {
+		width: 100%;
+	}
+
+	.common-title-cn {
+		font-size: 30px;
+		line-height: 50px;
+	}
+
+	.common-title-en {
+		font-size: 14px;
+	}
+
+	.new-products .new-products-content .new-products-item {
+		padding: 20px 0 30px 0;
+	}
+
+	.team .team-btn {
+		width: 120px;
+		height: 36px;
+		line-height: 36px;
+		font-size: 14px;
+	}
 }

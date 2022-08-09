@@ -7,12 +7,13 @@
 		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
 		<link href="css/common.css" rel="stylesheet" type="text/css" />
 		<link href="css/home.css" rel="stylesheet" type="text/css" />
+		<link href="css/leftMenu.css" rel="stylesheet" type="text/css" />
 		<link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<!-- header PC -->
 		<div class="header header-pc" id="headerPC">
-			<div class="container flex-row flex-between">
+			<div class="container flex-row flex-align-center flex-between">
 				<div class="header-logo">
 					<img src="img/logo.png" alt="logo" class="logo">
 					<img src="img/logo_active.png" alt="logo" class="logo-active">
@@ -51,6 +52,68 @@
 				</div>
 			</div>
 		</div>
+		<!-- 移动端 header -->
+		<div class="header-mobile">
+			<div class="flex-row flex-align-center flex-between">
+				<div class="header-logo">
+					<img src="img/logo.png" alt="logo" class="logo">
+				</div>
+				<div class="menu-btn"></div>
+			</div>
+		</div>
+		<!-- 移动端 侧边菜单 -->
+		<div id="menu" class="leftMenu">
+			<div class="f1">
+				<ul>
+					<li>
+						<a href="#">JQ全屋定制</a>
+					</li>
+					<li>
+						<a href="#">家装攻略</a>
+					</li>
+					<li class="hasChild">
+						<a href="#">品牌介绍</a>
+						<div class="f2">
+							<ul>
+								<li>
+									<a href="#">公司介绍</a>
+								</li>
+								<li>
+									<a href="#">发展历程</a>
+								</li>
+								<li>
+									<a href="#">荣誉资质</a>
+								</li>
+								<li>
+									<a href="#">设计师介绍</a>
+								</li>
+								<li>
+									<a href="#">公司动态</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">门店展示</a></li>
+					<li class="hasChild">
+						<a href="#">资讯中心</a>
+						<div class="f2">
+							<ul>
+								<li>
+									<a href="#">公司新闻</a>
+								</li>
+								<li>
+									<a href="#">行业动态</a>
+								</li>
+								<li>
+									<a href="#">定制知识</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
 		<!-- banner -->
 		<div class="banner">
 			<div class="swiper-container banner-swiper">
@@ -77,7 +140,7 @@
 					<div class="common-title-en">WHAT CAN WE DO ?</div>
 				</div>
 				<div class="about-content">
-					<div class="flex-row flex-wrap flex-between about-content-top">
+					<div class="flex-row flex-wrap flex-between about-content-wrap">
 						<div class="about-banner">
 							<img src="img/a.png" alt="" />
 						</div>
@@ -92,8 +155,6 @@
 								</div>
 							</a>
 						</div>
-					</div>
-					<div class="flex-row flex-wrap flex-between about-content-bottom">
 						<div class="about-item">
 							<a href="#">
 								<div class="classfiy-name">
@@ -245,7 +306,7 @@
 					<div class="common-title-cn">2022 热卖新款</div>
 					<div class="common-title-en">NEW PRODUCTS</div>
 				</div>
-				<div class="new-products-content flex-row">
+				<div class="new-products-content flex-row flex-wrap">
 					<div class="new-products-left">
 						<a href="#">
 							<img src="img/g.jpg" />
@@ -384,30 +445,27 @@
 				<div class="form-content">
 					<div class="form-tips">目前已有<span>112</span>人获取全屋定制报价</div>
 					<form class="flex-row flex-wrap flex-between">
-						<div class="form-item flex-row">
+						<div class="form-item form-item-name flex-row">
 							<div class="form-item-label form-contact"></div>
 							<div class="form-item-value">
-								<input type="text" placeholder="您的真实姓名" name="name" style="width: 185px;"
-									class="form-input">
+								<input type="text" placeholder="您的真实姓名" name="name" class="form-input">
 							</div>
 						</div>
-						<div class="form-item flex-row">
+						<div class="form-item form-item-phone flex-row">
 							<div class="form-item-label form-phone"></div>
 							<div class="form-item-value">
-								<input type="text" placeholder="您的联系手机" name="phone" style="width: 185px;"
-									class="form-input">
+								<input type="text" placeholder="您的联系手机" name="phone" class="form-input">
 							</div>
 						</div>
-						<div class="form-item flex-row">
+						<div class="form-item form-item-acreage flex-row">
 							<div class="form-item-value">
-								<input type="text" placeholder="房屋面积" name="acreage" style="width: 100px;"
-									class="form-input">
+								<input type="text" placeholder="房屋面积" name="acreage" class="form-input">
 							</div>
 							<div class="form-item-unit">㎡</div>
 						</div>
-						<div class="form-item flex-row">
+						<div class="form-item form-select-room flex-row">
 							<div class="form-item-value">
-								<select  style="width: 100px;">
+								<select>
 									<option value="1">1室</option>
 									<option value="2">2室</option>
 									<option value="3">3室</option>
@@ -416,18 +474,18 @@
 							</div>
 							<div class="form-item-select"></div>
 						</div>
-						<div class="form-item flex-row">
+						<div class="form-item form-select-hall flex-row">
 							<div class="form-item-value">
-								<select  style="width: 100px;">
+								<select>
 									<option value="1">1厅</option>
 									<option value="2">2厅</option>
 								</select>
 							</div>
 							<div class="form-item-select"></div>
 						</div>
-						<div class="form-item flex-row">
+						<div class="form-item form-select-toilet flex-row">
 							<div class="form-item-value">
-								<select  style="width: 100px;">
+								<select>
 									<option value="1">1卫</option>
 									<option value="2">2卫</option>
 								</select>
@@ -453,9 +511,9 @@
 								<img src="img/new1.png" alt="">
 							</div>
 							<div class="news-info">
-								<div class="news-title">实用定制家居技巧，空间利用率翻倍~</div>
+								<div class="news-title text-ellipsis">实用定制家居技巧，空间利用率翻倍~</div>
 								<div class="news-time">2022-05-18</div>
-								<div class="news-dec">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
+								<div class="news-dec text-ellipsis-3">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
 							</div>
 						</div>
 						<div class="company-news-item flex-row">
@@ -463,9 +521,9 @@
 								<img src="img/new2.png" alt="">
 							</div>
 							<div class="news-info">
-								<div class="news-title">实用定制家居技巧，空间利用率翻倍~</div>
+								<div class="news-title text-ellipsis">实用定制家居技巧，空间利用率翻倍~</div>
 								<div class="news-time">2022-05-18</div>
-								<div class="news-dec">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
+								<div class="news-dec text-ellipsis-3">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
 							</div>
 						</div>
 						<div class="company-news-item flex-row">
@@ -473,9 +531,9 @@
 								<img src="img/new3.png" alt="">
 							</div>
 							<div class="news-info">
-								<div class="news-title">实用定制家居技巧，空间利用率翻倍~</div>
+								<div class="news-title text-ellipsis">实用定制家居技巧，空间利用率翻倍~</div>
 								<div class="news-time">2022-05-18</div>
-								<div class="news-dec">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
+								<div class="news-dec text-ellipsis-3">家里的电表箱、水管道、煤气表，露在外面不好看也不安全，利用玄关柜或餐边柜隐藏起来。</div>
 							</div>
 						</div>
 					</div>
@@ -549,7 +607,7 @@
 				</div>
 			</div>
 			<div class="copyright ">
-				<div class="container flex-row flex-between">
+				<div class="container flex-row flex-wrap flex-between">
 					<div>Copyright © 伊德雅全屋定制 | 粤ICP备0000000号</div>
 					<div>网站建设：中网科技</div>
 				</div>
@@ -590,93 +648,120 @@
 	</body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/swiper-4.3.5.min.js"></script>
+	<script type="text/javascript" src="js/leftMenu.js"></script>
 	<script type="text/javascript">
-		// banner
-		var banner = new Swiper(".banner-swiper", {
-			loop: true,
-			autoplay: false,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-		});
-		// case
-		var caseDisplay = new Swiper(".case-swiper", {
-			loop: true,
-			autoplay: false,
-			navigation: {
-				nextEl: '.case-btn-next',
-				prevEl: '.case-btn-prev',
-			}
-		})
-		// process
-		var process = new Swiper(".process-swiper", {
-			loop: true,
-			autoplay: false,
-			slidesPerView: 3,
-			slidesPerGroup: 3,
-			spaceBetween: 30,
-			pagination: {
-				el: ".case-pagination",
-				clickable: true,
-			},
-		});
-		// 获取滚动位置
-		function getPageScroll() {
-			let x, y;
-			if (window.pageXOffset) {
-				x = window.pageXOffset;
-				y = window.pageYOffset;
-			} else if (document.compatMode === "BackCompat") {
-				x = document.body.scrollLeft;
-				y = document.body.scrollTop;
-			} else {
-				x = document.documentElement.scrollLeft;
-				y = document.documentElement.scrollTop;
-			}
-			return {
-				x: x,
-				y: y
-			}
-		};
-		var headerWrap = $('#headerPC');
-		var scrollTopBtn = $('#scrollBtn')[0];
-		// 监听滚动
-		window.onscroll = function() {
-			let offsetY = getPageScroll().y;
-			if(offsetY>0){
-				headerWrap.addClass('header-pc-active')
-			}else{
-				headerWrap.removeClass('header-pc-active')
-			}
-			if (offsetY >= 200) {
-				scrollTopBtn.style.display = "block";
-			} else {
-				scrollTopBtn.style.display = "none";
-			}
-		};
-		// 点击返回
-		let timerId = null;
-		scrollTopBtn.onclick = function() {
-			clearInterval(timerId);
-			timerId = setInterval(function() {
-				let begin = getPageScroll().y; //当前位置
-				let target = 0; //目标位置
-				let step = (target - begin) * 0.3;
-				begin += step;
-				if (Math.abs(Math.floor(step)) <= 1) {
-					clearInterval(timerId);
-					window.scrollTo(0, 0);
-					return;
+		window.onload = function(){
+			// banner
+			var banner = new Swiper(".banner-swiper", {
+				loop: true,
+				autoplay: false,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+			// case
+			var caseDisplay = new Swiper(".case-swiper", {
+				loop: true,
+				autoplay: false,
+				navigation: {
+					nextEl: '.case-btn-next',
+					prevEl: '.case-btn-prev',
 				}
-				window.scrollTo(0, begin);
-			}, 50)
-		};
-		// 搜索
-		var searchBtn = $('#searchBtn')[0];
-		var searchInput = $('#searchInput');
-		searchBtn.onclick = function(){
-			searchInput.focus();
+			})
+			// process
+			var process = new Swiper(".process-swiper", {
+				loop: true,
+				autoplay: false,
+				slidesPerView: 3,
+				slidesPerGroup: 3,
+				spaceBetween: 30,
+				breakpoints:{
+					768:{
+						slidesPerView: 1,
+						slidesPerGroup: 1,
+						spaceBetween: 0,
+					}
+				},
+				pagination: {
+					el: ".case-pagination",
+					clickable: true,
+				},
+			});
+			// 获取滚动位置
+			function getPageScroll() {
+				let x, y;
+				if (window.pageXOffset) {
+					x = window.pageXOffset;
+					y = window.pageYOffset;
+				} else if (document.compatMode === "BackCompat") {
+					x = document.body.scrollLeft;
+					y = document.body.scrollTop;
+				} else {
+					x = document.documentElement.scrollLeft;
+					y = document.documentElement.scrollTop;
+				}
+				return {
+					x: x,
+					y: y
+				}
+			};
+			var headerWrap = $('#headerPC');
+			var scrollTopBtn = $('#scrollBtn')[0];
+			// 监听滚动
+			window.onscroll = function() {
+				let offsetY = getPageScroll().y;
+				if(offsetY>0){
+					headerWrap.addClass('header-pc-active')
+				}else{
+					headerWrap.removeClass('header-pc-active')
+				}
+				if (offsetY >= 200) {
+					scrollTopBtn.style.display = "block";
+				} else {
+					scrollTopBtn.style.display = "none";
+				}
+			};
+			// 点击返回
+			let timerId = null;
+			scrollTopBtn.onclick = function() {
+				clearInterval(timerId);
+				timerId = setInterval(function() {
+					let begin = getPageScroll().y; //当前位置
+					let target = 0; //目标位置
+					let step = (target - begin) * 0.3;
+					begin += step;
+					if (Math.abs(Math.floor(step)) <= 1) {
+						clearInterval(timerId);
+						window.scrollTo(0, 0);
+						return;
+					}
+					window.scrollTo(0, begin);
+				}, 50)
+			};
+			// header搜索
+			var searchBtn = $('#searchBtn')[0];
+			var searchInput = $('#searchInput');
+			searchBtn.onclick = function(){
+				searchInput.focus();
+			}
+			// pc下拉菜单
+			$('#headerPC .menu-list .menu-item a').hover(
+			function(e){
+				$(e.target).parent('.menu-item').addClass('on')
+			},function(e){
+				$(e.target).parent('.menu-item').removeClass('on')
+			})
+			$('#headerPC .menu-list .menu-item .menu-child-list a').hover(
+			function(e){
+				$(e.target).parents('.menu-item').addClass('on')
+			},function(e){
+				$(e.target).parents('.menu-item').removeClass('on')
+			}
+			)
+			// 移动端菜单
+			$('#menu').leftMenu({"triggerBtn": ".menu-btn"}).init();
 		}
+		
 	</script>
 </html>
