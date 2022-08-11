@@ -63,6 +63,24 @@ body {
 	margin-bottom: 5px;
 }
 
+
+.about-center p {
+	width: 100%;
+	max-width: 789px;
+	line-height: 30px;
+}
+
+.about-center .inside-common-title{
+	margin-bottom: 10px;
+}
+
+.about-center,
+.about-center .inside-common-title-cn,
+.about-center .inside-common-title-en {
+	color: #fff !important;
+	text-align: center;
+}
+
 @media screen and (max-width: 1400px) {
 	.about-top {
 		padding-bottom: 50px;
@@ -93,7 +111,8 @@ body {
 		max-width: 100%;
 		margin-top: 20px;
 	}
-	.about-bottom-right .about-img{
+
+	.about-bottom-right .about-img {
 		width: calc(50% - 2.5px);
 	}
 }

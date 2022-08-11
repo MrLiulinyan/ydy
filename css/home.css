@@ -67,6 +67,11 @@
 	cursor: pointer;
 }
 
+.products-classify-item .item-icon{
+	width: 80px;
+	height: 60px;
+}
+
 .products-classify-item .item-icon img {
 	display: block;
 	margin: 0 auto;
@@ -611,7 +616,7 @@
 }
 
 /* 移动端 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.about {
 		padding-top: 40px;
 		padding-bottom: 60px;
