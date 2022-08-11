@@ -70,7 +70,7 @@
 	margin-bottom: 60px;
 	background-color: #fff;
 	width: 100%;
-	height: 478px;
+	height: 500px;
 	background-color: #ffffff;
 	border-radius: 20px;
 	overflow: hidden;
@@ -79,6 +79,7 @@
 .news-swiper .news-swiper-img {
 	width: 100%;
 	max-width: 700px;
+	border-radius: 20px;
 }
 
 .news-swiper .news-swiper-info {
@@ -138,4 +139,55 @@
 
 .footer {
 	margin-top: 0;
+}
+
+@media screen and (max-width: 1400px) {
+	.news-swiper{
+		height: auto;
+	}
+	.swiper-btn{
+		right: 5%;
+		bottom: 28px;
+	}
+	.news-swiper-info .news-time{
+		margin-bottom: 30px;
+	}
+	.news-swiper .news-swiper-img{
+		max-width: 100%;
+		border-radius: 20px 20px 0 0;
+	}
+	.news-swiper .news-swiper-info{
+		max-width: 100%;
+		padding-bottom: 80px;
+	}
+}
+
+/* 移动端 */
+@media screen and (max-width: 767px) {
+	.news-swiper-info .news-title{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.news-swiper-info .news-time,
+	.news-swiper-info .news-dec{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.news-btn-prev, .news-btn-next{
+		width: 30px;
+		height: 30px;
+		background-size: 60%;
+	}
+	.news-list .news-list-item .news-img{
+		max-width: 100%;
+		height: 237px;
+		margin-bottom: 20px;
+	}
+	.news-list .news-list-item .news-info{
+		max-width: 100%;
+	}
+	.news-list .news-list-item .news-name{
+		font-size: 16px;
+		line-height: 30px;
+	}
 }

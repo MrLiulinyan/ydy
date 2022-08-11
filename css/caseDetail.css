@@ -144,3 +144,27 @@ body {
 .message-form {
 	margin-bottom: 110px;
 }
+
+@media screen and (max-width: 1400px) {
+	.detail-left,
+	.detail-right{
+		max-width: 100%;
+	}
+	.detail-right{
+		margin-top: 20px;
+	}
+	.recommend-img{
+		height: 434px;
+	}
+}
+
+/* 移动端 */
+@media screen and (max-width: 768px) {
+	.detail-left,
+	.detail-right{
+		padding: 30px 20px;
+	}
+	.recommend-img{
+		height: 180px;
+	}
+}

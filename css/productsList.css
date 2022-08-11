@@ -110,13 +110,14 @@ body {
 	height: 66px;
 	background-color: #312f30;
 	box-sizing: border-box;
-	padding: 25px 70px;
+	padding: 20px 70px;
 	color: #ffffff;
 }
 
 .filter-head .filter-label{
 	margin-right: 100px;
 }
+
 
 .filter-head .filter-list .filter-item+.filter-item{
 	margin-left: 40px;
@@ -136,9 +137,9 @@ body {
 }
 
 .products-filter .filter-content .filter-row{
-	padding: 24px 0;
+	padding: 18px 0;
 	border-bottom: dashed 1px #a8a8a8bf;
-	background: url(../img/filter_icon.png)left center no-repeat;
+	background: url(../img/filter_icon.png)0px 22px no-repeat;
 	padding-left: 68px;
 }
 
@@ -147,11 +148,15 @@ body {
 }
 
 .products-filter .filter-content .filter-label{
-	margin-right: 60px;
+	margin-right: 40px;
 }
 
-.products-filter .filter-content .filter-item+.filter-item{
-	margin-left: 40px;
+.products-filter .filter-content .filter-list{
+	width: calc(100% - 72px);
+}
+
+.products-filter .filter-content .filter-item{
+	margin:0 20px;
 }
 
 .products-filter .filter-content .filter-item a{
@@ -161,4 +166,54 @@ body {
 .products-filter .filter-content .filter-item a.active,
 .products-filter .filter-content .filter-item a:hover{
 	color: #007e94;
+}
+
+.products-filter .filter-content,
+.filter-head{
+	line-height: 30px;
+}
+
+
+/* ipad or 移动端 */
+@media screen and (max-width: 1400px) {
+	.flow-list{
+		padding: 70px 40px;
+	}
+	.product-item{
+		max-width: 100%;
+	}
+	.product-item a{
+		height: 100%;
+	}
+}
+
+/* 移动端 */
+@media screen and (max-width: 767px) {
+	.flow-list{
+		display: none;
+	}
+	.product-item{
+		margin-bottom: 20px;
+		height: calc(100vw / 2.11 / 1.74);
+	}
+	.product-item .product-img{
+		height: 100%;
+	}
+	.product-item .product-info{
+		padding: 12px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.product-item .product-name{
+		font-size: 16px;
+	}
+	.product-item .product-btn{
+		font-size: 12px;
+		width: 100px;
+		height: 24px;
+		line-height: 24px;
+		margin-top: 0;
+	}
 }

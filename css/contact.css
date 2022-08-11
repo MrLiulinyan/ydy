@@ -8,12 +8,14 @@
 	min-height: 600px;
 	background-color: #fafafa;
 	border-radius: 16px;
+	box-sizing: border-box;
 }
 
 .contact-left,
 .contact-right {
 	width: 100%;
 	max-width: 700px;
+	box-sizing: border-box;
 }
 
 .contact-left {
@@ -49,7 +51,8 @@
 
 .contact-info .contact-info-item {
 	font-size: 14px;
-	line-height: 42px;
+	line-height: 24px;
+	margin-bottom: 22px;
 	color: #333333;
 	padding-left: 25px;
 	background-position: left center;
@@ -67,3 +70,23 @@
 .contact-info .contact-info-item.address{
 	background-image: url(../img/contact_icon3.png);
 }
+
+
+@media screen and (max-width: 1400px) {
+	.contact-left,
+	.contact-right {
+	 	max-width: 100%;
+	}
+	.contact-right{
+		margin-top: 50px;
+	}
+}
+
+/* 移动端 */
+@media screen and (max-width: 768px) {
+	.contact-left{
+		padding: 20px;
+	}
+	
+}
+

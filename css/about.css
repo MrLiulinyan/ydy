@@ -32,7 +32,7 @@ body {
 	position: relative;
 	z-index: -1;
 	margin-left: -105px;
-	margin-top:30px;
+	margin-top: 30px;
 }
 
 .about-center {
@@ -46,19 +46,54 @@ body {
 	background: url(../img/about_bg.jpg) bottom center no-repeat;
 }
 
-.about-bottom-left{
+.about-bottom-left {
 	width: 100%;
 	height: auto;
 	max-width: 624px;
 	padding-top: 85px;
 }
 
-.about-bottom-right{
+.about-bottom-right {
 	width: 100%;
 	max-width: 680px;
 	height: auto;
 }
 
-.about-bottom-right .about-img{
+.about-bottom-right .about-img {
 	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+	.about-top {
+		padding-bottom: 50px;
+	}
+
+	.about-top-img {
+		display: none;
+	}
+
+	.about-top-text {
+		max-width: 100%;
+		height: auto;
+		margin-left: 0;
+		padding: 30px;
+	}
+
+	.about-bottom {
+		padding: 50px 0 60px 0;
+		background-size: cover;
+	}
+
+	.about-bottom-left {
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.about-bottom-right {
+		max-width: 100%;
+		margin-top: 20px;
+	}
+	.about-bottom-right .about-img{
+		width: calc(50% - 2.5px);
+	}
 }

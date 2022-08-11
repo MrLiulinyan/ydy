@@ -2,13 +2,13 @@
 	width: 100%;
 	max-width: 1167px;
 	height: 670px;
-	background-color: #00b0ab;
 	border-radius: 16px;
 	overflow: hidden;
 }
 
 .swiper-right {
-	width: 193px;
+	max-width: 193px;
+	width: 100%;
 	height: 670px;
 	box-sizing: border-box;
 	position: relative;
@@ -76,10 +76,71 @@
 	color: #999999;
 	padding: 11px 36px;
 	box-sizing: border-box;
-		cursor: pointer;
+	cursor: pointer;
 }
 
-.detail-bottom-btn+.detail-bottom-btn{
+.detail-bottom-btn+.detail-bottom-btn {
 	margin-left: 80px;
+}
 
+
+@media screen and (max-width: 1400px) {
+	.swiper-left {
+		height: 429px;
+	}
+	.swiper-right {
+		max-width: 100%;
+		height: auto;
+		padding: 0;
+		margin-top: 30px;
+		padding: 0 30px;
+	}
+
+	.swiper-right .swiper-slide {
+		width: 193px;
+		height: 111px;
+	}
+	.swiper-right .swiper-slide .thumbs-img{
+		height: 100%;
+	}
+
+	.detail-button-prev,
+	.detail-button-next {
+		top: 50%;
+	}
+
+	.detail-button-prev {
+		left: 20px;
+		transform: rotate(0deg);
+	}
+
+	.detail-button-next {
+		right: 20px;
+		left: auto;
+		transform: rotate(0deg)
+	}
+}
+
+/* 移动端 */
+@media screen and (max-width: 767px) {
+	.swiper-left {
+		height: 226px;
+	}
+	.swiper-right .swiper-slide {
+		width: 120px;
+		height: 80px;
+	}
+	.detail-bottom{
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+	.swiper-right .swiper-slide .thumbs-img{
+		height: 100%;
+	}
+	.detail-bottom-btn+.detail-bottom-btn{
+		margin-left: 10px;
+	}
+	.detail-bottom-btn,.detail-bottom-btn{
+		
+	}
 }

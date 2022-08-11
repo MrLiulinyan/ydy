@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>伊德雅全屋定制</title>
+		<meta name='viewport' content = 'width=device-width, initial-scale=1.0, userscalable:no' >
 		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
 		<link href="css/common.css" rel="stylesheet" type="text/css" />
 		<link href="css/productDetail.css" rel="stylesheet" type="text/css" />
@@ -60,7 +61,7 @@
 			</div>
 			<div class="inside-main">
 				<div class="container">
-					<div class="products-swiper flex-row flex-between">
+					<div class="products-swiper flex-row flex-wrap flex-between">
                          <div class="swiper-left">
                          	<div class="swiper-container" id="gallery">
                          		<div class="swiper-wrapper">
@@ -171,56 +172,65 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/swiper-4.3.5.min.js"></script>
 	<script type="text/javascript">
-		function updateNavPosition() {
-			$('#thumbs .active-swiper').removeClass('active-swiper');
-			var activeNav = $('#thumbs .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-swiper');
-			if (!activeNav.hasClass('swiper-slide-visible')) {
-				if (activeNav.index() > previewSwiper.activeIndex) {
-					var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1;
-					previewSwiper.slideTo(activeNav.index() - thumbsPerNav)
-				} else {
-					previewSwiper.slideTo(activeNav.index())
+		window.onload = function (){
+			function updateNavPosition() {
+				$('#thumbs .active-swiper').removeClass('active-swiper');
+				var activeNav = $('#thumbs .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-swiper');
+				if (!activeNav.hasClass('swiper-slide-visible')) {
+					if (activeNav.index() > previewSwiper.activeIndex) {
+						var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1;
+						previewSwiper.slideTo(activeNav.index() - thumbsPerNav)
+					} else {
+						previewSwiper.slideTo(activeNav.index())
+					}
 				}
 			}
+			var viewSwiper = new Swiper('#gallery', {
+				autoplay: {
+					delay: 4500,
+					disableOnInteraction: false,
+				},
+				on: {
+					slideChangeTransitionStart: function() {
+						updateNavPosition()
+					}
+				}
+			});
+			var previewSwiper = new Swiper('#thumbs', {
+				direction: 'vertical',
+				slidesPerView: 'auto',
+				spaceBetween:16,
+				allowTouchMove: false,
+				on: {
+					tap: function() {
+						viewSwiper.slideTo(previewSwiper.clickedIndex)
+					}
+				},
+				breakpoints:{
+					1400:{
+						direction: 'horizontal',
+					}
+				},
+			});
+			$('.detail-button-prev').on('click', function(e) {
+				e.preventDefault();
+				if (viewSwiper.activeIndex == 0) {
+					viewSwiper.slideTo(viewSwiper.slides.length - 1, 1000);
+					return
+				}
+				viewSwiper.slidePrev()
+			});
+			$('.detail-button-next').on('click', function(e) {
+				e.preventDefault();
+				if (viewSwiper.activeIndex == viewSwiper.slides.length - 1) {
+					viewSwiper.slideTo(0, 1000);
+					return
+				}
+				viewSwiper.slideNext()
+			});
 		}
-		var viewSwiper = new Swiper('#gallery', {
-			autoplay: {
-				delay: 4500,
-				disableOnInteraction: false,
-			},
-			on: {
-				slideChangeTransitionStart: function() {
-					updateNavPosition()
-				}
-			}
-		});
-		var previewSwiper = new Swiper('#thumbs', {
-			direction: 'vertical',
-			slidesPerView: 'auto',
-			spaceBetween:16,
-			allowTouchMove: false,
-			on: {
-				tap: function() {
-					viewSwiper.slideTo(previewSwiper.clickedIndex)
-				}
-			}
-		});
-		$('.detail-button-prev').on('click', function(e) {
-			e.preventDefault();
-			if (viewSwiper.activeIndex == 0) {
-				viewSwiper.slideTo(viewSwiper.slides.length - 1, 1000);
-				return
-			}
-			viewSwiper.slidePrev()
-		});
-		$('.detail-button-next').on('click', function(e) {
-			e.preventDefault();
-			if (viewSwiper.activeIndex == viewSwiper.slides.length - 1) {
-				viewSwiper.slideTo(0, 1000);
-				return
-			}
-			viewSwiper.slideNext()
-		});
+		
+		
 
 
 	</script>
