@@ -568,7 +568,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1400px) {}
 
 /* 移动端 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	html,
 	body {
 		font-size: 14px;
@@ -620,5 +620,8 @@ img {
 	.inside-common-title-en{
 		font-size: 14px;
 		line-height: 20px;
+	}
+	.broadside{
+		display: none;
 	}
 }

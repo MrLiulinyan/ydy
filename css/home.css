@@ -45,20 +45,55 @@
 	line-height: 24px;
 	color: #777777;
 }
+
 .products-banner {
 	width: 100%;
 	height: 741px;
 	background: url(../img/f.jpg)top center no-repeat;
 }
+
 .products-banner img {
 	width: 100%;
 	height: auto;
 	display: block;
 }
 
+.products-banner-title {
+	color: #fff;
+	padding-top: 124px;
+}
+
+.products-banner-title-en {
+	font-family: Georgia;
+	font-size: 48px;
+	color: #ffffff;
+}
+
+.products-banner-title-en span {
+	font-family: Georgia;
+	font-size: 56px;
+	line-height: 60px;
+	color: #ffffff;
+}
+
+.products-banner-title-cn {
+	font-size: 42px;
+	line-height: 60px;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.products-banner p {
+	font-size: 20px;
+	line-height: 30px;
+	color: #ffffff;
+	margin-top: 56px;
+	max-width: 568px;
+}
+
 .products-classify {
 	width: 100%;
-/* 	height: 300px; */
+	/* 	height: 300px; */
 	background-color: #efefef;
 	border-radius: 16px;
 	margin-top: -130px;
@@ -71,7 +106,7 @@
 	cursor: pointer;
 }
 
-.products-classify-item .item-icon{
+.products-classify-item .item-icon {
 	width: 80px;
 	height: 60px;
 	margin: 0 auto;
@@ -394,26 +429,26 @@
 
 .form .form-content .form-item-name,
 .form .form-content .form-item-phone,
-.form .form-content .form-item-acreage{
+.form .form-content .form-item-acreage {
 	width: 240px;
 }
 
 .form .form-content .form-select-room,
 .form .form-content .form-select-hall,
-.form .form-content .form-select-toilet{
+.form .form-content .form-select-toilet {
 	width: 145px;
 }
 
 .form .form-content .form-item-name .form-item-value,
 .form .form-content .form-item-phone .form-item-value,
-.form .form-content .form-item-acreage .form-item-value{
+.form .form-content .form-item-acreage .form-item-value {
 	width: calc(100% - 53px);
 }
 
 
 .form .form-content .form-select-room .form-item-value,
 .form .form-content .form-select-hall .form-item-value,
-.form .form-content .form-select-toilet .form-item-value{
+.form .form-content .form-select-toilet .form-item-value {
 	width: calc(100% - 43px);
 }
 
@@ -603,8 +638,35 @@
 		margin-left: 5px;
 		margin-right: 5px;
 	}
-	.products-banner{
+
+	.products-banner {
 		height: 500px;
+	}
+
+	.products-banner-title {
+		padding-top: 62px;
+	}
+
+	.products-banner-title-en {
+		font-size: 36px;
+	}
+
+	.products-banner-title-en span {
+		font-family: Georgia;
+		font-size: 48px;
+		line-height: 50px;
+	}
+
+	.products-banner-title-cn {
+		font-size: 30px;
+		line-height: 50px;
+		margin-top: 20px;
+	}
+
+	.products-banner p {
+		font-size: 16px;
+		margin-top: 48px;
+		max-width: 568px;
 	}
 
 	.products-display .products-display-left {
@@ -621,18 +683,21 @@
 		padding: 0;
 		margin-top: 50px;
 	}
-    .products-classify {
+
+	.products-classify {
 		padding-top: 50px;
 		padding-bottom: 50px;
+		margin-top: -80px;
 	}
-	.form .form-content .form-item{
+
+	.form .form-content .form-item {
 		margin-bottom: 10px;
 	}
-	
+
 	.company-news .news-left {
 		max-width: 100%;
 	}
-	
+
 	.company-news .news-right {
 		margin-top: 50px;
 		max-width: 100%;
@@ -662,32 +727,70 @@
 		line-height: 20px;
 	}
 
-	.company-news .news-right .news-wrap{
+	.company-news .news-right .news-wrap {
 		left: 5px;
 		bottom: 5px;
-		
+
 	}
 
 	.products-classify {
 		padding: 30px 20px;
 		margin-top: -50px;
 	}
-	.products-banner{
-		height: 250px;
+
+	.products-banner {
+		height: 325px;
 	}
-	.products-classify-item .item-icon{
+
+	.products-banner-title {
+		padding-top: 30px;
+	}
+
+	.products-banner-title-en {
+		font-size: 24px;
+	}
+
+	.products-banner-title-en span {
+		font-family: Georgia;
+		font-size: 30px;
+		line-height: 42px;
+	}
+
+	.products-banner-title-cn {
+		font-size: 20px;
+		line-height: 42px;
+		margin-top: 10px;
+	}
+
+	.products-banner p {
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 20px;
+		max-width: 100%;
+	}
+
+	.products-display .proudcts-list .classify-name {
+		font-size: 16px;
+	}
+
+	.products-display .proudcts-list .products-name a {
+		font-size: 14px;
+	}
+
+	.products-classify-item .item-icon {
 		width: 40px;
 		height: 30px;
 	}
-	.products-classify-item .item-name{
+
+	.products-classify-item .item-name {
 		font-size: 16px;
 		margin-top: 15px;
 	}
-	
+
 	.products,
 	.new-products,
 	.team,
-	.process-details{
+	.process-details {
 		margin-bottom: 60px;
 	}
 
@@ -699,23 +802,48 @@
 
 	.form .form-content .form-item-name,
 	.form .form-content .form-item-phone,
-	.form .form-content .form-item-acreage{
+	.form .form-content .form-item-acreage {
 		width: 100%;
 	}
-	
+
 	.form .form-content .form-select-room,
 	.form .form-content .form-select-hall,
-	.form .form-content .form-select-toilet{
+	.form .form-content .form-select-toilet {
 		width: calc(100% / 3 - 10px);
 	}
-	
-	.form .submit-btn{
+
+	.form .flow-item .flow-title {
+		font-size: 16px;
+	}
+
+	.form .flow-item .flow-name {
+		font-size: 12px;
+	}
+
+	.form .form-tips {
+		font-size: 20px;
+	}
+
+	.form .submit-btn {
 		margin-top: 20px;
 	}
 
 	.new-products-left,
 	.new-products-right {
 		width: 100%;
+	}
+
+	.company-news .company-news-item .news-title {
+		font-size: 16px;
+	}
+
+	.company-news .company-news-item .news-time,
+	.company-news .company-news-item .news-dec {
+		font-size: 12px;
+	}
+	
+	.company-news .news-right .news-title{
+		font-size: 18px;
 	}
 
 	.common-title-cn {
@@ -725,6 +853,10 @@
 
 	.common-title-en {
 		font-size: 14px;
+	}
+
+	.process-content .process-title {
+		font-size: 16px;
 	}
 
 	.new-products .new-products-content .new-products-item {
